@@ -6,6 +6,7 @@ import Dashboard from './pages/Dashboard/Dashboard';
 import Home from './pages/Home/Home';
 import Admin from './pages/Admin/Admin';
 import ChangePassword from './pages/ChangePassword/ChangePassword';
+import AIPanel from './pages/AIPanel/AIPanel';
 
 const ComingSoon = ({ name }) => (
   <div style={{flex:1,display:'flex',flexDirection:'column'}}>
@@ -50,7 +51,7 @@ function AppRoutes() {
         <Route path="/media"     element={<ComingSoon name="🎬 Media" />} />
         <Route path="/sales"     element={<ComingSoon name="🛒 Kinh doanh" />} />
         <Route path="/xnk"       element={<ComingSoon name="🚢 Xuất nhập khẩu" />} />
-        <Route path="/ai"        element={<ComingSoon name="🤖 AI Panel" />} />
+        <Route path="/ai"        element={<AIPanel />} />
         <Route path="/ai/agents" element={<ComingSoon name="⚡ Agent Dashboard" />} />
       </Route>
       <Route path="/" element={<Navigate to="/login" replace />} />
