@@ -1,0 +1,75 @@
+.wms { padding: 28px 32px; }
+
+.wms-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; }
+.wms-title { font-size:20px; font-weight:700; color:var(--text); letter-spacing:-0.025em; }
+.wms-sub { font-size:13px; color:var(--text3); margin-top:2px; font-weight:300; }
+.wms-actions { display:flex; gap:8px; }
+.wms-btn {
+  height:34px; padding:0 16px; border-radius:8px; cursor:pointer;
+  font-size:13px; font-family:'DM Sans',sans-serif; font-weight:500; transition:all 0.15s;
+}
+.wms-btn.ghost { background:var(--bg3); border:1px solid var(--border); color:var(--text2); }
+.wms-btn.ghost:hover { border-color:var(--border2); color:var(--text); }
+.wms-btn.gold { background:var(--gold); border:none; color:#000; font-weight:600; }
+
+/* Stats */
+.wms-stats { display:flex; gap:12px; margin-bottom:20px; }
+.wms-stat {
+  flex:1; background:var(--bg3); border:1px solid var(--border);
+  border-radius:12px; padding:14px 16px;
+}
+.wms-stat-val { font-size:22px; font-weight:700; color:var(--text); letter-spacing:-0.02em; }
+.wms-stat-lbl { font-size:11px; color:var(--text3); margin-top:3px; }
+
+/* Filters */
+.wms-filters { display:flex; gap:8px; margin-bottom:16px; }
+.wms-filter {
+  padding:7px 16px; border-radius:20px; font-size:13px; font-weight:500;
+  border:1px solid var(--border); color:var(--text3); background:none; cursor:pointer;
+  font-family:'DM Sans',sans-serif; transition:all 0.15s;
+}
+.wms-filter.active { background:rgba(201,168,76,0.1); border-color:rgba(201,168,76,0.3); color:var(--gold); }
+.wms-filter:hover:not(.active) { border-color:var(--border2); color:var(--text2); }
+.filter-count { font-weight:400; font-size:12px; }
+
+/* Orders */
+.orders-list { display:flex; flex-direction:column; gap:10px; }
+.order-card {
+  background:var(--bg3); border:1px solid var(--border);
+  border-radius:14px; padding:16px 18px;
+  transition:border-color 0.15s;
+}
+.order-card:hover { border-color:var(--border2); }
+.oc-top { display:flex; justify-content:space-between; align-items:center; margin-bottom:6px; }
+.oc-code { font-size:15px; font-weight:700; color:var(--text); }
+.oc-meta { font-size:12px; color:var(--text3); margin-bottom:10px; display:flex; gap:4px; flex-wrap:wrap; }
+.oc-sep { color:var(--border2); }
+.oc-platform { color:var(--text2); font-weight:500; }
+
+.oc-items { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:12px; }
+.oc-item-tag {
+  background:var(--bg4); border-radius:8px;
+  padding:5px 10px; font-size:12px; color:var(--text2);
+}
+.oc-item-tag strong { color:var(--text); }
+
+.oc-actions { display:flex; gap:8px; }
+.oc-btn {
+  flex:1; height:38px; border-radius:10px; font-size:13px; font-weight:600;
+  font-family:'DM Sans',sans-serif; cursor:pointer; border:none; transition:all 0.15s;
+}
+.oc-btn.ghost { background:var(--bg4); color:var(--text2); flex:0.6; }
+.oc-btn.ghost:hover { color:var(--text); }
+.oc-btn.gold { background:var(--gold); color:#000; }
+.oc-btn.gold:hover { background:var(--gold2); }
+.oc-btn.teal { background:rgba(90,200,250,0.15); color:var(--teal); border:1px solid rgba(90,200,250,0.3); }
+
+/* Status pills */
+.status-pill {
+  padding:4px 10px; border-radius:20px; font-size:11px; font-weight:600;
+}
+.status-pill.blue   { background:rgba(10,132,255,0.15);  color:var(--blue);   }
+.status-pill.orange { background:rgba(255,159,10,0.15);  color:var(--orange); }
+.status-pill.green  { background:rgba(48,209,88,0.15);   color:var(--green);  }
+.status-pill.teal   { background:rgba(90,200,250,0.15);  color:var(--teal);   }
+.status-pill.red    { background:rgba(255,69,58,0.15);   color:var(--red);    }

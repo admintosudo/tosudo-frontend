@@ -1,0 +1,10 @@
+.home-page { flex:1; display:flex; flex-direction:column; }
+.home-body { padding:24px; flex:1; }
+.home-welcome { margin-bottom:32px; }
+.hw-title { font-size:24px; font-weight:700; color:#f5f5f7; letter-spacing:-0.025em; }
+.hw-title span { color:#C9A84C; }
+.hw-sub { font-size:14px; color:rgba(245,245,247,0.3); margin-top:4px; }
+.home-coming { text-align:center; padding:60px 0; }
+.hc-icon { font-size:48px; margin-bottom:16px; }
+.hc-text { font-size:18px; font-weight:600; color:rgba(245,245,247,0.6); }
+.hc-sub { font-size:14px; color:rgba(245,245,247,0.3); margin-top:6px; }
