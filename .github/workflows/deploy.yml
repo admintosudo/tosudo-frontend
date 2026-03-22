@@ -12,6 +12,6 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           host: 14.225.205.57
-          username: root
+          username: tosudo
           key: ${{ secrets.VPS_SSH_KEY }}
           script: /var/www/deploy.sh
